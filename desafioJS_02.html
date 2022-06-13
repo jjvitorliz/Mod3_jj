@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio JavaScript 02:</title>
+    <script language="JavaScript">
+        var n = "0";
+        n = window.prompt("Informe um valor qualquer: ");
+        if (isNaN(n)) {
+        document.write("ERRO!!!");
+        }
+        n = parseInt(n);
+        if (n % 2 == 0) {
+            document.write(+n+" É Par, ");
+        }
+        if (n % 2 != 0){
+            document.write(+n+" É Impar, ");
+        }
+        
+        if (n < 10) {
+            document.write("E é uma Unidade");
+        }
+
+        else if (n < 100) {
+            document.write("E é uma Dezena");
+        }
+
+        else if (n < 1000) {
+            document.write("E é uma Centena");
+        }
+
+        else {
+            document.write("E é um Milhar");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

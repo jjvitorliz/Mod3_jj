@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio JavaScript 03:</title>
+    <script language="JavaScript">
+        var n = "0";
+        var milhar = "10000";
+        n = window.prompt("Informe um valor qualquer: ");
+        if (isNaN(n)) {
+        document.write("ERRO!!! O valor inserido não é um número...");
+        }
+        if (n > 0) {
+            document.write(+n+" É Positivo, ");
+        }
+        else {
+            document.write(+n+" É Negativo, ");
+        }
+
+        n = parseInt(n);
+        if (n < 10){
+            document.write(" É uma Unidade");
+        }
+
+        else if (n < 100) {
+            document.write(" É uma Dezena");
+        }
+
+        else if (n < 1000) {
+            document.write(" É uma Centena");
+        }
+
+        else if (n > 1000) {
+            milhar = 10000 - n;
+            document.write(" É um Milhar, e a diferença do valor inserido do valor de 10.000 é de: "+milhar);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
